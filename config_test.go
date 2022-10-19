@@ -23,7 +23,7 @@ func TestConfig(t *testing.T) {
 		}
 		ret := getAllSettings()
 		if !reflect.DeepEqual(ret, exp) {
-			t.Errorf("bad config.\nExpected: %s.\nGot: %5s%s", exp, " ", ret)
+			t.Errorf("bad config.\nExpected: %s\nGot: %5s%s", exp, " ", ret)
 		}
 	})
 	t.Run("mock config", func(t *testing.T) {
@@ -35,7 +35,7 @@ func TestConfig(t *testing.T) {
 		exp := map[string]interface{}{"mock": "mock"}
 		ret := getAllSettings()
 		if !reflect.DeepEqual(ret, exp) {
-			t.Errorf("bad config.\nExpected: %s.\nGot: %5s%s", exp, " ", ret)
+			t.Errorf("bad config.\nExpected: %s\nGot: %5s%s", exp, " ", ret)
 		}
 	})
 }

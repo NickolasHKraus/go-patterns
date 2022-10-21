@@ -14,7 +14,7 @@ package main
 //
 //   1. Define handler function:
 //
-//   		  func(http.ResponseWriter, *http.Request)
+//        func(http.ResponseWriter, *http.Request)
 //
 //   2. Register handler for a given pattern:
 //
@@ -83,9 +83,8 @@ func (h UserHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 // managing listeners on the local network address).
 //
 // See: https://go.dev/ref/spec#Program_execution
-//
 // func main() {
-//   mux := http.NewServeMux()
-// 	 mux.Handle("/users", userHandler{})
-// 	 log.Fatal(http.ListenAndServe(":8080", mux))
+// 	mux := http.NewServeMux()
+// 	mux.Handle("/users", userHandler{})
+// 	log.Fatal(http.ListenAndServe(":8080", mux))
 // }

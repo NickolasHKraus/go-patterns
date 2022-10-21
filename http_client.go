@@ -95,7 +95,7 @@ func (f FooAPIClient) GetFooData(url string) (*FooResponseData, error) {
 // implements the FooAPI interface. A type implementing the FooAPI interface
 // can be easily mocked and passed to the function when testing.
 func DoSomething(f FooAPI) (string, *FooResponseData) {
-	url := f.GetFooURL("https", "api.foo.com", "/v1/user")
+	url := f.GetFooURL("https", "api.foo.com", "/v1/users/0")
 	resp, err := f.GetFooData(url)
 	if err != nil {
 		fmt.Printf("An error occurred: %s", err)

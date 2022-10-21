@@ -17,9 +17,9 @@ func TestGetFooURL(t *testing.T) {
 		exp := (&url.URL{
 			Scheme: "https",
 			Host:   "api.foo.com",
-			Path:   "/v1/user",
+			Path:   "/v1/users/0",
 		}).String()
-		ret := c.GetFooURL("https", "api.foo.com", "/v1/user")
+		ret := c.GetFooURL("https", "api.foo.com", "/v1/users/0")
 		if ret != exp {
 			t.Errorf("incorrect url.\nExpected: %s\nGot: %5s%s", exp, " ", ret)
 		}
@@ -162,10 +162,10 @@ func TestDoSomething(t *testing.T) {
 
 		// Assert that GetFooURL() is called with expected arguments.
 		// Anything else will fail.
-		expURL := "https://api.foo.com/v1/user"
+		expURL := "https://api.foo.com/v1/users/0"
 		m.
 			EXPECT().
-			GetFooURL(gomock.Eq("https"), gomock.Eq("api.foo.com"), gomock.Eq("/v1/user")).
+			GetFooURL(gomock.Eq("https"), gomock.Eq("api.foo.com"), gomock.Eq("/v1/users/0")).
 			Return(expURL)
 
 		// Assert that GetFooData() is called with expected arguments.
@@ -177,7 +177,7 @@ func TestDoSomething(t *testing.T) {
 		}
 		m.
 			EXPECT().
-			GetFooData(gomock.Eq("https://api.foo.com/v1/user")).
+			GetFooData(gomock.Eq("https://api.foo.com/v1/users/0")).
 			Return(expData, nil)
 
 		retURL, retData := DoSomething(m)

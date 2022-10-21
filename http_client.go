@@ -108,16 +108,16 @@ func DoSomething(f FooAPI) (string, *FooResponseData) {
 // See: https://go.dev/ref/spec#Program_execution
 //
 // func main() {
-// 	f := FooAPIClient{
-// 		Client: &http.Client{},
-// 	}
-// 	DoSomething(f)
+//   f := FooAPIClient{
+// 	   Client: &http.Client{},
+// 	 }
+// 	 DoSomething(f)
 // }
 
 // Example initializer function.
 //
 // func InitFooAPIClient() *FooAPIClient {
-// 	return &FooAPIClient{
-// 		Client: &http.Client{},
-// 	}
+//   return &FooAPIClient{
+//     Client: &http.Client{},
+//   }
 // }

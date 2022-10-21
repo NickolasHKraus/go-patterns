@@ -55,6 +55,9 @@ func TestGetFooData(t *testing.T) {
 		assert.EqualError(t, err, "connection refused")
 	})
 	// Define httptest test cases
+	//
+	// For example tests, see:
+	//   * https://go.dev/src/net/http/httptest/example_test.go
 	cases := []struct {
 		Name       string
 		StatusCode int

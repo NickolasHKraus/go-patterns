@@ -1,4 +1,4 @@
-module github.com/NickolasHKraus/go-patterns
+module github.com/nickolashkraus/go-patterns
 
 go 1.19
 

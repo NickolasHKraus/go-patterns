@@ -1,7 +1,7 @@
 # Go Patterns
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/NickolasHKraus/go-patterns/blob/master/LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/NickolasHKraus/go-patterns)](https://goreportcard.com/report/github.com/NickolasHKraus/go-patterns)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/nickolashkraus/go-patterns/blob/master/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nickolashkraus/go-patterns)](https://goreportcard.com/report/github.com/nickolashkraus/go-patterns)
 
 Examples for common patterns in Go.
 
